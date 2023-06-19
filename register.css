@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+   background: #232629;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   gap: 20px;
+}
+
+img{
+    width: 350px;
+}
+
+.reg-con{
+    background: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.reg-con > input{
+    width: 350px;
+    padding: 18px;
+    border: 2px solid #c4bfbf;
+    border-radius: 10px;
+    font-family: 'Poppins';
+}
+
+.reg-con > input::placeholder{
+    font-size: 15px;
+}
+
+.reg-con > p{
+    width: 100%;
+}
+
+.reg-con > p > a{
+    color: orange;
+    text-decoration: none;
+}
+
+
+.reg-btn{
+    width: 100%;
+    color: #fff;
+    background: black;
+    outline: none;
+    border:  2px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: large;
+}

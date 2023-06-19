@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: black;
+}
+body::-webkit-scrollbar {
+  display: none;
+  }
+header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  padding: 3rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: white;
+  font-weight: 700;
+}
+nav ul a {
+  color: rgb(9, 241, 9);
+  font-weight: 600;
+}
+nav ul a:hover {
+  border-bottom: 2px solid blue;
+  transition: 0.5;
+}
+
+section {
+  background-image:url(istockphoto-1326353821-612x612.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 800;
+  height: 300px;
+}
+h2 {
+  font-size: 5em;
+  text-align: center;
+  padding-top: 5%;
+  color: rgb(9, 232, 9);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+#logo img{
+  width: 200px;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+  section {
+    background-image:url(istockphoto-1326353821-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 800;
+    height: 200px;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: red;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: black;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+
+  section {
+    background-image:url(istockphoto-1326353821-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 800;
+    height: 200px;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+
+  section {
+    background-image:url(istockphoto-1326353821-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 800;
+    height: 200px;
+    width: 100%;
+  }
+
+  
+  
+}
+.row{
+  padding-top: 3%;
+}
+.row img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.desc{
+  padding-right: 30%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+}
+
+p{
+  color: green;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+button{
+  width: 120px;
+  height: 40px;
+  color: black;
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 22%;
+  
+}
+
+button a{
+      font-size: 15px;
+      text-decoration: none;
+      color:blue;
+      text-align: center;
+      justify-content: center;
+}
+
+
+
+.sub-menu{
+  display: none;
+  width: 300px;
+ text-transform: uppercase;
+}
+
+ nav ul li:hover  .sub-menu{
+  display: block;
+  position: absolute;
+}
+
+ nav ul li:hover .sub-menu ul{
+  display: block;
+  margin: 10px;
+}
+ nav ul li:hover .sub-menu ul li{
+  
+  padding: 10px;
+  border-bottom: 2px dotted ;
+  border-radius: 0px;
+  text-align: left;
+  background-color: transparent;
+}
+ nav ul li:hover .sub-menu ul li:last-child{
+  border-bottom: none;
+}
+
+
+
+.desc span{
+  color: rgb(232, 17, 53);
+}
+
+.service{
+  background-color: black;
+  position: relative;
+  
+}
+
+.service h1 {
+  font-size: 15px;
+  color: white;
+  padding: 20px; 
+}
+
+
+
+
+
+
+
+
+
+footer{
+  width:100vw;
+  height: 260px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  justify-content: center;
+  color: black;
+}
+footer p:nth-child(1){
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(1){
+  font-size: 17px;
+  color: #110c43;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+
+
+
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .gmail:hover,
+.wrapper .gmail:hover .tooltip,
+.wrapper .gmail:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+  #end{
+      margin: 10px;
+      position: absolute;
+      bottom: 10px;
+      font: 13px;
+      color: #110c43;
+  }
+
+  #t{
+      font-size: 15px;
+      color: #110c43;
+    }
+
+    #font{
+      text-align: center;
+      justify-content: center;
+      margin-left: 1%;
+    }
+
+
+    h3{
+      text-align: center;
+      font-size: 40px;
+      color: green;
+      font-weight: bolder;
+    }
+    big{
+      color: white;
+    }
+
+    #image{
+      width: 300px;
+      margin-left: 40%;
+    }
+
+   
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjOFu_R4__kZ3A9YS60NyyHxtJxZ-5eUPADiDJD7Xz3h_IYotK9crTkyiw2-kRznZwANUtRPQLao&usqp=CAU&ec=48665701");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+    
+    .intro button {
+      background-color: blue;
+      color: #000;
+      margin-right: 20%;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      width: 180px;
+      height: 50px;
+      margin-top: 2%;
+    }
+
+    .intro button:hover{
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
